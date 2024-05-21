@@ -4,18 +4,25 @@
   justify-content: center;
   text-align: center;
   background-color: rgb(186, 178, 212);
-  cursor: pointer;
   width: 100%;
-  padding: 1.5% 0;
+  padding: 0.5% 0;
   position: fixed;
   top: 0;
   right: 0;
   font-size: large;
-  gap: 25px;
+  gap: 10px;
 }
 .nav a {
   color: rgb(86, 45, 152);
 }
 .nav a:hover {
   color: black;
+}
+.nav_links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
 }
