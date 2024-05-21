@@ -3,7 +3,7 @@ import "./Navigation.css";
 
 const Navigation = () => {
   return (
-    <nav>
+    <nav className="nav">
       <Link to={{ pathname: "/" }}>Home</Link>
       <Link to={{ pathname: "/offer" }}>Offer</Link>
       <Link to={{ pathname: "/how_order" }}>How to order?</Link>
