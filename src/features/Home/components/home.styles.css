@@ -1,0 +1,13 @@
+.footer_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+
+  width: 80%;
+  margin: 0 auto;
+}
+.footer_div img {
+  max-width: 100px;
+  margin: 0 10px;
+}
