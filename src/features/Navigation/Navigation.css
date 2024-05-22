@@ -11,6 +11,7 @@
   right: 0;
   font-size: large;
   gap: 10px;
+  border-bottom: 1px solid rgb(255, 255, 255);
 }
 .nav a {
   color: rgb(86, 45, 152);
@@ -25,4 +26,9 @@
   justify-content: center;
   text-align: center;
   cursor: pointer;
+
+  @media only screen and (max-width: 500px) {
+    font-size: 16px;
+    gap: 10px;
+  }
 }

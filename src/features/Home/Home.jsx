@@ -5,29 +5,26 @@ import HomeFooter from "./components/HomeFooter";
 
 const Home = () => {
   return (
-    <>
-      <div className="nesto">
-        <div className="home_div">
-          <div className="home_div_left">
-            <div className="home_title">
-              <h1>Fresh Beautiful.</h1>
-              <h1>Innovative.</h1>
-            </div>
-            <hr />
-            <p>
-              There are many variations of passangers of Lorem Ipsum available,
-              but the majority have suffered alteration in some from, by
-              injected humor
-            </p>
-            <Button buttonText="ORDER NOW" />
+    <div className="home_div">
+      <div className="div">
+        <div className="div_left">
+          <div className="div_title">
+            <h1>Enjoy Shopping.</h1>
+            <h1>The Best.</h1>
           </div>
-          <div className="home_div_right">
-            <img src={HeadphonesBlack} alt="headphones black" />
-          </div>
+          <hr />
+          <p>
+            Welcome to my headphone store! This website has the best selection
+            of premium headphones, so find your headphones!
+          </p>
+          <Button buttonText="ORDER NOW" />
         </div>
-        <HomeFooter />
+        <div className="div_right">
+          <img src={HeadphonesBlack} alt="headphones black" />
+        </div>
       </div>
-    </>
+      <HomeFooter />
+    </div>
   );
 };
 export default Home;
