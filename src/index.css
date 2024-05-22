@@ -26,7 +26,7 @@ body {
   margin: 0;
   /* display: flex; */
   place-items: center;
-  min-width: 500px;
+  min-width: 320px;
   min-height: 100vh;
 }
 
@@ -66,3 +66,16 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
+.footer_logo {
+  max-width: 70px;
+  margin: auto;
+  width: 100%;
+  filter: grayscale(1);
+}
+.footer_logo:hover {
+  filter: grayscale(0);
+}
+.home_div_right {
+  width: 100%;
+  max-width: 500px;
+}
