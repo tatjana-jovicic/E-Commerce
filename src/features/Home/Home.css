@@ -42,10 +42,10 @@
   justify-content: center;
   align-items: center;
 }
-.div_right img {
+/* .div_right img {
   width: 100%;
   max-width: 500px;
-}
+} */
 
 @media only screen and (max-width: 500px) {
   .div {
@@ -61,6 +61,18 @@
   }
   .div_right {
     padding-top: 1rem;
+  }
+}
+.footer_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  width: 80%;
+  margin: 0 auto 0;
+  padding: 0;
+  @media only screen and (max-width: 500px) {
+    flex-direction: column;
   }
 }
 

@@ -1,7 +1,14 @@
 import "./Home.css";
 import Button from "../../components/Button/Button";
-import HeadphonesBlack from "../../assets/headphones-black.png";
-import HomeFooter from "./components/HomeFooter";
+import {
+  HeadphonesBlack,
+  Sennheiser,
+  Bose,
+  Samsung,
+  Sony,
+  Shure,
+  Jbl,
+} from "../../assets/index";
 
 const Home = () => {
   return (
@@ -20,10 +27,17 @@ const Home = () => {
           <Button buttonText="ORDER NOW" />
         </div>
         <div className="div_right">
-          <img src={HeadphonesBlack} alt="headphones black" />
+          <HeadphonesBlack />
         </div>
       </div>
-      <HomeFooter />
+      <footer className="footer_div">
+        <Jbl />
+        <Shure />
+        <Sony />
+        <Samsung />
+        <Bose />
+        <Sennheiser />
+      </footer>
     </div>
   );
 };
