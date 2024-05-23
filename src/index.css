@@ -66,16 +66,39 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
-.footer_logo {
-  max-width: 70px;
+.first_home_page_footer_logo {
+  max-width: 90px;
   margin: auto;
   width: 100%;
   filter: grayscale(1);
+
+  @media only screen and (max-width: 700px) {
+    max-width: 80px;
+  }
+  @media only screen and (max-width: 600px) {
+    max-width: 70px;
+  }
+  @media only screen and (max-width: 560px) {
+    max-width: 90px;
+  }
 }
-.footer_logo:hover {
+.first_home_page_footer_logo:hover {
   filter: grayscale(0);
 }
-.home_div_right {
+
+.first_home_page_right_img {
   width: 100%;
   max-width: 500px;
+
+  @media only screen and (max-width: 1060px) {
+    max-width: 380px;
+  }
+
+  @media only screen and (max-width: 800px) {
+    max-width: 300px;
+  }
+
+  @media only screen and (max-width: 500px) {
+    max-width: 250px;
+  }
 }

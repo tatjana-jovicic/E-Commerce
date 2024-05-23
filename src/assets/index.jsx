@@ -1,45 +1,67 @@
 import JblImg from "./jbl-logo.png";
-import ShureImg from "./shure-logo.png";
-import SonyImg from "./sony-logo.svg";
-import SamsungImg from "./samsung-logo.png";
-import BoseImg from "./bose-logo.png";
-import SennheiserImg from "./sennheiser-logo.png";
+import CompanyNameImg from "./companyName-logo.png";
+import CRImg from "./cr-logo.png";
+import WiredImg from "./wired-logo.png";
+import EngadgetImg from "./engadget-logo.png";
+import TCImg from "./tc-logo.png";
 import HeadphonesBlackImg from "./headphones-black.png";
 
 const Jbl = () => {
-  return <img className="footer_logo" src={JblImg} alt="jbl logo" />;
-};
-
-const Shure = () => {
-  return <img className="footer_logo" src={ShureImg} alt="shure logo" />;
-};
-
-const Sony = () => {
-  return <img className="footer_logo" src={SonyImg} alt="sony logo" />;
-};
-
-const Samsung = () => {
-  return <img className="footer_logo" src={SamsungImg} alt="samsung logo" />;
-};
-
-const Bose = () => {
-  return <img className="footer_logo" src={BoseImg} alt="bose logo" />;
-};
-
-const Sennheiser = () => {
   return (
-    <img className="footer_logo" src={SennheiserImg} alt="sennheiser logo" />
+    <img className="first_home_page_footer_logo" src={JblImg} alt="jbl logo" />
+  );
+};
+
+const CompanyName = () => {
+  return (
+    <img
+      className="first_home_page_footer_logo"
+      src={CompanyNameImg}
+      alt="CN logo"
+    />
+  );
+};
+
+const CR = () => {
+  return (
+    <img className="first_home_page_footer_logo" src={CRImg} alt="CR logo" />
+  );
+};
+
+const Wired = () => {
+  return (
+    <img
+      className="first_home_page_footer_logo"
+      src={WiredImg}
+      alt="wired logo"
+    />
+  );
+};
+
+const Engadget = () => {
+  return (
+    <img
+      className="first_home_page_footer_logo"
+      src={EngadgetImg}
+      alt="engadget logo"
+    />
+  );
+};
+
+const TC = () => {
+  return (
+    <img className="first_home_page_footer_logo" src={TCImg} alt="TC logo" />
   );
 };
 
 const HeadphonesBlack = () => {
   return (
     <img
-      className="home_div_right"
+      className="first_home_page_right_img"
       src={HeadphonesBlackImg}
-      alt="headphones logo"
+      alt="headphones img"
     />
   );
 };
 
-export { Jbl, Shure, Sony, Samsung, Bose, Sennheiser, HeadphonesBlack };
+export { Jbl, CompanyName, CR, Wired, Engadget, TC, HeadphonesBlack };
