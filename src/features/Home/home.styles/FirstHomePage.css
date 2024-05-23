@@ -1,0 +1,109 @@
+.first_home_page_div {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+  margin: 0;
+  background-color: rgb(186, 178, 212);
+}
+.first_home_page_con {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  color: rgb(86, 45, 152);
+}
+.first_home_page_con_left {
+  padding-top: 13%;
+  padding-left: 15%;
+}
+.first_con_title h1 {
+  margin: 0;
+  padding: 0;
+}
+.first_con_title h1 + h1 {
+  margin-top: 5px;
+}
+.first_home_page_con_left hr {
+  display: flex;
+  border: none;
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
+  margin: 20px 0;
+}
+.first_home_page_con_left p {
+  padding-bottom: 0.5rem;
+  font-size: 17px;
+}
+.first_home_page_con_right {
+  padding-top: 3rem;
+  display: flex;
+  padding-right: 5%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.first_home_page_footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  width: 80%;
+  margin: 0 auto 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 1060px) {
+  .first_home_page_con_left {
+    font-size: 13px;
+    padding-top: 9rem;
+  }
+  .first_home_page_con_right {
+    padding-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .first_home_page_con_left {
+    font-size: 12px;
+    padding-top: 10rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .first_home_page_con {
+    flex-direction: column;
+    align-items: center;
+  }
+  .first_home_page_con_left {
+    padding-top: 8rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    text-align: start;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .first_home_page_footer {
+    flex-direction: row;
+    width: 100%;
+    max-width: 350px;
+    padding: 1rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .first_home_page_con_left {
+    font-size: 10px;
+    padding-top: 6rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: start;
+  }
+  .first_home_page_con_left p {
+    font-size: 15px;
+  }
+  .first_home_page_con_right {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
