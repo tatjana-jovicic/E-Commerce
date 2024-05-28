@@ -17,7 +17,7 @@ const FifthHomePage = () => {
             <div className="fifth_home_page_con_right_title">
               <h1>Feature your best sellers.</h1>
               <p>
-                Tehere are many vaariations of passages of Lorem ipsum avalible
+                There are many vaariations of passages of Lorem ipsum avalible
                 but the majority have suffered you are going to use passage of
                 Lorem ipsu you need to be sure there isnt anything embarrassing
                 hidden in the middle of text. All the Lorem ipsum generators.
