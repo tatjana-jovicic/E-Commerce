@@ -1,7 +1,7 @@
 .first_home_page_div {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   justify-content: space-between;
   margin: 0;
   background-color: rgb(186, 178, 212);
@@ -11,6 +11,8 @@
   flex: 1;
   overflow: hidden;
   color: rgb(86, 45, 152);
+  padding: 2.5rem;
+  background-color: rgb(186, 178, 212);
 }
 .first_home_page_con_left {
   padding-top: 13%;
@@ -57,21 +59,21 @@
 
 @media only screen and (max-width: 1060px) {
   .first_home_page_con {
-    padding-top: 3rem;
+    padding: 3rem;
   }
   .first_home_page_con_left {
     font-size: 13px;
-    padding-top: 9rem;
+    padding-top: 7rem;
   }
   .first_home_page_con_right {
-    padding-top: 1rem;
+    padding-top: 3rem;
   }
 }
 
 @media only screen and (max-width: 900px) {
   .first_home_page_con_left {
     font-size: 12px;
-    padding-top: 10rem;
+    padding-top: 5rem;
   }
 }
 @media only screen and (max-width: 800px) {

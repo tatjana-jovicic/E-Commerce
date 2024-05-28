@@ -1,3 +1,14 @@
-.div {
-  background-color: aquamarine;
+.seventh_home_page_con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  background-color: rgb(195, 191, 213);
+}
+.seventh_home_page_con footer {
+  font-size: 15px;
+  padding-top: 10px;
+  color: rgba(128, 128, 128, 0.937);
 }
