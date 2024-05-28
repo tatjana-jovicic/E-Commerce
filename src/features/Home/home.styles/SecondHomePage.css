@@ -55,6 +55,7 @@
 .second_home_page_con_icon {
   width: 100%;
   max-width: 50px;
+  /* filter: invert(1);*/
 }
 
 @media only screen and (max-width: 900px) {
