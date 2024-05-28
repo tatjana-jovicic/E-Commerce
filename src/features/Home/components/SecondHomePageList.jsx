@@ -1,7 +1,7 @@
 import "../home.styles/SecondHomePage.css";
 
 const SecondHomePageList = () => {
-  const aboutHeadphones = [
+  const headphones = [
     {
       image:
         "https://cdn4.iconfinder.com/data/icons/users-14/128/Users_Edit_Man-512.png",
@@ -25,15 +25,15 @@ const SecondHomePageList = () => {
 
   return (
     <div className="second_home_page_list">
-      {aboutHeadphones.map((item) => (
-        <div key={item.title}>
+      {headphones.map((headphone) => (
+        <div key={headphone.title}>
           <img
             className="second_home_page_con_icon"
-            src={item.image}
+            src={headphone.image}
             alt="logo"
           />
-          <h2>{item.title}</h2>
-          <p>{item.description}</p>
+          <h2>{headphone.title}</h2>
+          <p>{headphone.description}</p>
         </div>
       ))}
     </div>
