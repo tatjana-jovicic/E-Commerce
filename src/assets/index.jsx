@@ -6,6 +6,9 @@ import EngadgetImg from "./engadget-logo.png";
 import TCImg from "./tc-logo.png";
 import HeadphonesBlackImg from "./headphones-black.png";
 import HeadphonesWhiteImg from "./headphoneswhite.webp";
+import aboutPicture1 from "./aboutPicture1.jpg";
+import aboutPicture2 from "./aboutPicture2.jpg";
+import aboutPicture3 from "./aboutPicture3.png";
 
 const Jbl = () => {
   return (
@@ -75,6 +78,36 @@ const HeadphonesWhite = () => {
   );
 };
 
+const AboutPicture_1 = () => {
+  return (
+    <img
+      className="about_page_pic_con_1"
+      src={aboutPicture1}
+      alt="picture of us"
+    />
+  );
+};
+
+const AboutPicture_2 = () => {
+  return (
+    <img
+      className="about_page_pic_con_2"
+      src={aboutPicture2}
+      alt="jbl picture"
+    />
+  );
+};
+
+const AboutPicture_3 = () => {
+  return (
+    <img
+      className="about_page_pic_con_3"
+      src={aboutPicture3}
+      alt="jbl picture"
+    />
+  );
+};
+
 export {
   Jbl,
   CompanyName,
@@ -84,4 +117,7 @@ export {
   TC,
   HeadphonesBlack,
   HeadphonesWhite,
+  AboutPicture_1,
+  AboutPicture_2,
+  AboutPicture_3,
 };
