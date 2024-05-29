@@ -1,11 +1,3 @@
-.second_home_page_div {
-  display: flex;
-  flex-direction: column;
-  min-height: 92vh;
-  justify-content: space-between;
-  margin: 0;
-  background-color: rgb(210, 206, 224);
-}
 .second_home_page_con {
   width: 100%;
   display: flex;
@@ -13,8 +5,9 @@
   align-items: center;
   text-align: center;
   flex-direction: column;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-top: 6.7rem;
+  padding-bottom: 6.7rem;
+  background-color: rgb(210, 206, 224);
 }
 .second_home_page_con_left {
   width: 100%;
