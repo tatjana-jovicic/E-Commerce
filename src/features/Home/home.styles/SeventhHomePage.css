@@ -4,11 +4,15 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 1rem;
-  background-color: rgb(195, 191, 213);
+  padding: 5rem;
+  background-color: rgb(159, 150, 191);
+}
+.div {
+  background-color: rgb(186, 178, 212);
+  max-width: 1000px;
 }
 .seventh_home_page_con footer {
-  font-size: 15px;
-  padding-top: 10px;
-  color: rgba(128, 128, 128, 0.937);
+  font-size: 14px;
+  padding-top: 30px;
+  color: rgba(88, 88, 88, 0.975);
 }

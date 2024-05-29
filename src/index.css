@@ -76,7 +76,7 @@ button:focus-visible {
     max-width: 70px;
   }
   @media only screen and (max-width: 600px) {
-    max-width: 90px;
+    max-width: 80px;
   }
 }
 .first_home_page_footer_logo:hover {
@@ -92,11 +92,11 @@ button:focus-visible {
   }
 
   @media only screen and (max-width: 800px) {
-    max-width: 300px;
+    max-width: 400px;
   }
 
-  @media only screen and (max-width: 500px) {
-    max-width: 250px;
+  @media only screen and (max-width: 600px) {
+    max-width: 350px;
   }
 }
 .third_home_page_con_right_img {
