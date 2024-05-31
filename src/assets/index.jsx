@@ -9,6 +9,8 @@ import HeadphonesWhiteImg from "./headphoneswhite.webp";
 import aboutPicture1 from "./aboutPicture1.jpg";
 import aboutPicture2 from "./aboutPicture2.jpg";
 import aboutPicture3 from "./aboutPicture3.png";
+// import location from "./location.png";
+// import phone from "./phone.png";
 
 const Jbl = () => {
   return (
@@ -107,6 +109,22 @@ const AboutPicture_3 = () => {
     />
   );
 };
+
+// const Location = () => {
+//   return (
+//     <img
+//       className="contact_page_left_logo"
+//       src={location}
+//       alt="location icon"
+//     />
+//   );
+// };
+
+// const Phone = () => {
+//   return (
+//     <img className="contact_page_left_logo" src={phone} alt="phone icon" />
+//   );
+// };
 
 export {
   Jbl,
