@@ -4,22 +4,22 @@ const SecondHomePageList = () => {
   const headphones = [
     {
       image:
-        "https://cdn4.iconfinder.com/data/icons/users-14/128/Users_Edit_Man-512.png",
+        "https://www.iconarchive.com/download/i91967/icons8/windows-8/Users-Edit-User.ico",
       title: "FREE UPDATES",
       description:
-        "It users a dictionary over 200 Latin the words. combinied with a hanful of model sentence with structure/.",
+        "It users a dictionary over 200 Latin the words. combinied with a hanful of model sentence with structure.",
     },
     {
       image: "https://pngimg.com/d/headphones_PNG7623.png",
       title: "EASY TO USE",
       description:
-        "It users a dictionary over 200 Latin the words. combinied with a hanful of model sentence with structure/.",
+        "It users a dictionary over 200 Latin the words. combinied with a hanful of model sentence with structure.",
     },
     {
       image: "https://cdn-icons-png.freepik.com/512/81/81663.png",
       title: "TRENDY DESIGN",
       description:
-        "It users a dictionary over 200 Latin the words. combinied with a hanful of model sentence with structure/.",
+        "It users a dictionary over 200 Latin the words. combinied with a hanful of model sentence with structure.",
     },
   ];
 
@@ -30,7 +30,7 @@ const SecondHomePageList = () => {
           <img
             className="second_home_page_con_icon"
             src={headphone.image}
-            alt="logo"
+            alt="icon"
           />
           <h2>{headphone.title}</h2>
           <p>{headphone.description}</p>
