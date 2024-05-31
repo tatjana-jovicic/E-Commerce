@@ -3,7 +3,7 @@ import "../contact.styles/Contact.css";
 const ContactInfo = () => {
   const contacts = [
     {
-      logo: "https://www.freeiconspng.com/thumbs/location-icon-png/location-icon-map-png--1.png",
+      logo: "https://www.freeiconspng.com/thumbs/location-icon-png/location-map-pins-png-3.png",
       title: "Our Office Location",
       description_1: "The Interior Design Studio Company",
       description_2: "The Coutyand, Al Quoz 1, Colorado, USA",

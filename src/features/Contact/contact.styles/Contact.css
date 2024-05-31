@@ -63,10 +63,10 @@
 .contact_page_con_right h2 {
   font-size: 20px;
 }
-.forma {
+.form {
   display: grid;
 }
-.forma input,
+.form input,
 textarea {
   width: 100%;
   padding: 12px;
@@ -75,13 +75,126 @@ textarea {
   box-sizing: border-box;
   margin-bottom: 15px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  /* resize: vertical; */
+  resize: vertical;
 }
-.forma textarea {
+.form textarea {
   padding-bottom: 50px;
+  margin-bottom: 0;
 }
-.forma input[type="submit"] {
+.form input[type="submit"] {
   background-color: #845eaa;
   color: white;
   cursor: pointer;
+}
+.form input[type="submit"]:hover {
+  background-color: white;
+  font-weight: bold;
+  color: black;
+}
+.checkbox_div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.checkbox_div input {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  margin: 5px 0;
+}
+.checkbox_div label {
+  margin: 0;
+  font-size: 14px;
+}
+.checkbox_div a {
+  color: #515faf;
+}
+@media only screen and (max-width: 1060px) {
+  .contact_page_con_left {
+    max-width: 350px;
+  }
+  .contact_page_con_right {
+    max-width: 350px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .contact_page_con_left h1 {
+    font-size: 25px;
+  }
+  .contact_page_con_left p {
+    font-size: 15px;
+  }
+  .contact_page_left_logo {
+    width: 30px;
+    height: 30px;
+  }
+  .contact_page_left_list_text h3 {
+    font-size: 15px;
+  }
+  .contact_page_left_list_text p {
+    font-size: 13px;
+  }
+  .contact_page_con_right {
+    padding: 1.5rem;
+  }
+  .contact_page_con_right h2 {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .contact_page_con {
+    display: grid;
+    padding-top: 6rem;
+  }
+  .contact_page_con_left {
+    max-width: 400px;
+  }
+  .contact_page_con_right {
+    max-width: 350px;
+  }
+}
+@media only screen and (max-width: 495px) {
+  .contact_page_con {
+    padding-top: 5rem;
+  }
+  .contact_page_con_left {
+    max-width: 350px;
+  }
+  .contact_page_con_left h1 {
+    font-size: 20px;
+  }
+  .contact_page_con_left p {
+    font-size: 14px;
+  }
+  .contact_page_left_logo {
+    width: 25px;
+    height: 25px;
+  }
+  .contact_page_con_right {
+    max-width: 300px;
+  }
+  .form input,
+  textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .contact_page_con_left {
+    max-width: 300px;
+  }
+
+  .contact_page_con_right {
+    max-width: 250px;
+  }
+  .contact_page_con_right label {
+    font-size: 15px;
+  }
+  .checkbox_div label {
+    font-size: 14px;
+  }
 }
