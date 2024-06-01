@@ -16,8 +16,19 @@ import headphone from "./headphone.png";
 import client1 from "./client_1.webp";
 import client2 from "./client_2.webp";
 import client3 from "./client_3.jpg";
-// import location from "./location.png";
-// import phone from "./phone.png";
+import location from "./location.png";
+import phone from "./phone.png";
+
+// ---------------------------------------------------------HomePage
+const HeadphonesBlack = () => {
+  return (
+    <img
+      className="first_home_page_right_img"
+      src={HeadphonesBlackImg}
+      alt="headphones black img"
+    />
+  );
+};
 
 const Jbl = () => {
   return (
@@ -67,52 +78,12 @@ const TC = () => {
   );
 };
 
-const HeadphonesBlack = () => {
-  return (
-    <img
-      className="first_home_page_right_img"
-      src={HeadphonesBlackImg}
-      alt="headphones black img"
-    />
-  );
-};
-
 const HeadphonesWhite = () => {
   return (
     <img
       className="third_home_page_con_right_img"
       src={HeadphonesWhiteImg}
       alt="headphones white img"
-    />
-  );
-};
-
-const AboutPicture_1 = () => {
-  return (
-    <img
-      className="about_page_pic_con_1"
-      src={aboutPicture1}
-      alt="picture of us"
-    />
-  );
-};
-
-const AboutPicture_2 = () => {
-  return (
-    <img
-      className="about_page_pic_con_2"
-      src={aboutPicture2}
-      alt="jbl picture"
-    />
-  );
-};
-
-const AboutPicture_3 = () => {
-  return (
-    <img
-      className="about_page_pic_con_3"
-      src={aboutPicture3}
-      alt="jbl picture"
     />
   );
 };
@@ -147,6 +118,16 @@ const IconHeapdhoneMicrophon = () => {
   );
 };
 
+const Headphone = () => {
+  return (
+    <img
+      className="fourth_home_page_con_images"
+      src={headphone}
+      alt="headphone pic"
+    />
+  );
+};
+
 const Client1 = () => {
   return (
     <img
@@ -177,31 +158,53 @@ const Client3 = () => {
   );
 };
 
-const Headphone = () => {
+// ---------------------------------------------------------AboutPage
+const AboutPicture_1 = () => {
   return (
     <img
-      className="fourth_home_page_con_images"
-      src={headphone}
-      alt="headphone pic"
+      className="about_page_pic_con_1"
+      src={aboutPicture1}
+      alt="picture of us"
     />
   );
 };
 
-// const Location = () => {
-//   return (
-//     <img
-//       className="contact_page_left_logo"
-//       src={location}
-//       alt="location icon"
-//     />
-//   );
-// };
+const AboutPicture_2 = () => {
+  return (
+    <img
+      className="about_page_pic_con_2"
+      src={aboutPicture2}
+      alt="jbl picture"
+    />
+  );
+};
 
-// const Phone = () => {
-//   return (
-//     <img className="contact_page_left_logo" src={phone} alt="phone icon" />
-//   );
-// };
+const AboutPicture_3 = () => {
+  return (
+    <img
+      className="about_page_pic_con_3"
+      src={aboutPicture3}
+      alt="jbl picture"
+    />
+  );
+};
+
+// ---------------------------------------------------------ContactPage
+const Location = () => {
+  return (
+    <img
+      className="contact_page_left_logo"
+      src={location}
+      alt="location icon"
+    />
+  );
+};
+
+const Phone = () => {
+  return (
+    <img className="contact_page_left_logo" src={phone} alt="phone icon" />
+  );
+};
 
 export {
   Jbl,
@@ -222,4 +225,6 @@ export {
   Client2,
   Client3,
   Headphone,
+  Location,
+  Phone,
 };
