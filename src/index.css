@@ -69,9 +69,9 @@ button:focus-visible {
 
 /* ------------------------------------HOME PAGE------FirstPage--------------- */
 .first_home_page_footer_logo {
+  width: 100%;
   max-width: 90px;
   margin: auto;
-  width: 100%;
   filter: grayscale(1);
 }
 .first_home_page_footer_logo:hover {
@@ -83,12 +83,13 @@ button:focus-visible {
 }
 @media only screen and (max-width: 1100px) {
   .first_home_page_right_img {
-    max-width: 350px;
+    width: 85%;
   }
 }
-@media only screen and (max-width: 1060px) {
+@media only screen and (max-width: 800px) {
   .first_home_page_right_img {
-    max-width: 330px;
+    width: 100%;
+    max-width: 300px;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -97,11 +98,20 @@ button:focus-visible {
   }
 }
 @media only screen and (max-width: 600px) {
-  .first_home_page_right_img {
-    max-width: 280px;
-  }
   .first_home_page_footer_logo {
     max-width: 80px;
+  }
+}
+
+/* -------------------------------------------HOME PAGE------SecondPage----------------- */
+.second_home_page_con_icon {
+  width: 100%;
+  max-width: 50px;
+  filter: invert(1);
+}
+@media only screen and (max-width: 500px) {
+  .second_home_page_con_icon {
+    max-width: 40px;
   }
 }
 /* -------------------------------------------HOME PAGE------ThirdPage----------------- */
@@ -110,16 +120,36 @@ button:focus-visible {
   max-width: 400px;
 
   @media only screen and (max-width: 1000px) {
-    max-width: 300px;
+    width: 70%;
   }
   @media only screen and (max-width: 850px) {
     max-width: 250px;
   }
-  @media only screen and (max-width: 400px) {
-    max-width: 200px;
+}
+
+/* --------------------------------------HOME PAGE------FourthPage--------------- */
+.fourth_home_page_con_images {
+  width: 100%;
+  max-width: 50px;
+}
+
+/* --------------------------------------HOME PAGE------SixthPage--------------- */
+.sixth_home_page_con_icon {
+  width: 100%;
+  max-width: 100px;
+  border-radius: 50%;
+}
+@media only screen and (max-width: 850px) {
+  .sixth_home_page_con_icon {
+    max-width: 80px;
   }
 }
-/* --------------------------------------ABOUT PAGE--------------- */
+@media only screen and (max-width: 715px) {
+  .sixth_home_page_con_icon {
+    max-width: 100px;
+  }
+}
+/* -------------------------------------------ABOUT PAGE--------------- */
 .about_page_pic_con_1 {
   width: 100%;
   max-width: 300px;

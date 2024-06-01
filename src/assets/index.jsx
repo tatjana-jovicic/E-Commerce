@@ -9,6 +9,13 @@ import HeadphonesWhiteImg from "./headphoneswhite.webp";
 import aboutPicture1 from "./aboutPicture1.jpg";
 import aboutPicture2 from "./aboutPicture2.jpg";
 import aboutPicture3 from "./aboutPicture3.png";
+import iconEditUser from "./edit-user-icon.png";
+import iconHeapdhone from "./headphone-icon.png";
+import iconHeapdhoneMicrophon from "./icon-headphone-microphon.png";
+import headphone from "./headphone.png";
+import client1 from "./client_1.webp";
+import client2 from "./client_2.webp";
+import client3 from "./client_3.jpg";
 // import location from "./location.png";
 // import phone from "./phone.png";
 
@@ -110,6 +117,76 @@ const AboutPicture_3 = () => {
   );
 };
 
+const IconEditUser = () => {
+  return (
+    <img
+      className="second_home_page_con_icon"
+      src={iconEditUser}
+      alt="icon edit user"
+    />
+  );
+};
+
+const IconHeapdhone = () => {
+  return (
+    <img
+      className="second_home_page_con_icon"
+      src={iconHeapdhone}
+      alt="icon headphone"
+    />
+  );
+};
+
+const IconHeapdhoneMicrophon = () => {
+  return (
+    <img
+      className="second_home_page_con_icon"
+      src={iconHeapdhoneMicrophon}
+      alt="icon headphone with microphon"
+    />
+  );
+};
+
+const Client1 = () => {
+  return (
+    <img
+      className="sixth_home_page_con_icon"
+      src={client1}
+      alt="portrait of client"
+    />
+  );
+};
+
+const Client2 = () => {
+  return (
+    <img
+      className="sixth_home_page_con_icon"
+      src={client2}
+      alt="portrait of client"
+    />
+  );
+};
+
+const Client3 = () => {
+  return (
+    <img
+      className="sixth_home_page_con_icon"
+      src={client3}
+      alt="portrait of client"
+    />
+  );
+};
+
+const Headphone = () => {
+  return (
+    <img
+      className="fourth_home_page_con_images"
+      src={headphone}
+      alt="headphone pic"
+    />
+  );
+};
+
 // const Location = () => {
 //   return (
 //     <img
@@ -138,4 +215,11 @@ export {
   AboutPicture_1,
   AboutPicture_2,
   AboutPicture_3,
+  IconEditUser,
+  IconHeapdhone,
+  IconHeapdhoneMicrophon,
+  Client1,
+  Client2,
+  Client3,
+  Headphone,
 };
