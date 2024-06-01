@@ -1,15 +1,16 @@
 import "../contact.styles/Contact.css";
+import { Location, Phone } from "../../../assets/index";
 
 const ContactInfo = () => {
   const contacts = [
     {
-      logo: "https://www.freeiconspng.com/thumbs/location-icon-png/location-map-pins-png-3.png",
+      logo: <Location />,
       title: "Our Office Location",
       description_1: "The Interior Design Studio Company",
       description_2: "The Coutyand, Al Quoz 1, Colorado, USA",
     },
     {
-      logo: "https://cdn-icons-png.flaticon.com/512/15/15407.png",
+      logo: <Phone />,
       title: "Phone (Landline)",
       description_1: "+912 3 567 8987",
     },
@@ -18,11 +19,7 @@ const ContactInfo = () => {
     <div className="contact_page_left_list_con">
       {contacts.map((contact) => (
         <div className="contact_page_left_list" key={contact.title}>
-          <img
-            className="contact_page_left_logo"
-            src={contact.logo}
-            alt="contact logo"
-          />
+          {contact.logo}
           <div className="contact_page_left_list_text">
             <h3>{contact.title}</h3>
             <p>{contact.description_1}</p>

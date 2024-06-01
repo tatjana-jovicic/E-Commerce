@@ -192,9 +192,21 @@ button:focus-visible {
     max-width: 200px;
   }
 }
-/* -----------------------------------CONTACT PAGE---------------
+/* -------------------------------------CONTACT PAGE--------------- */
 .contact_page_left_logo {
   margin-top: 6px;
   width: 35px;
   height: 35px;
-} */
+}
+@media only screen and (max-width: 850px) {
+  .contact_page_left_logo {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media only screen and (max-width: 495px) {
+  .contact_page_left_logo {
+    width: 25px;
+    height: 25px;
+  }
+}

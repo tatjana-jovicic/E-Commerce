@@ -23,8 +23,8 @@
 }
 .contact_page_con_left hr {
   border: none;
-  height: 1.5px;
-  background-color: rgba(128, 128, 128, 0.521);
+  height: 1px;
+  background-color: white;
 }
 .contact_page_left_list_con {
   display: grid;
@@ -37,11 +37,6 @@
   display: flex;
   flex-direction: row;
   gap: 30px;
-}
-.contact_page_left_logo {
-  margin-top: 6px;
-  width: 35px;
-  height: 35px;
 }
 .contact_page_left_list_text h3 {
   margin: 0;
@@ -114,10 +109,10 @@ textarea {
 }
 @media only screen and (max-width: 1060px) {
   .contact_page_con_left {
-    max-width: 350px;
+    width: 90%;
   }
   .contact_page_con_right {
-    max-width: 350px;
+    width: 90%;
   }
 }
 @media only screen and (max-width: 850px) {
@@ -126,10 +121,6 @@ textarea {
   }
   .contact_page_con_left p {
     font-size: 15px;
-  }
-  .contact_page_left_logo {
-    width: 30px;
-    height: 30px;
   }
   .contact_page_left_list_text h3 {
     font-size: 15px;
@@ -149,19 +140,10 @@ textarea {
     display: grid;
     padding-top: 6rem;
   }
-  .contact_page_con_left {
-    max-width: 400px;
-  }
-  .contact_page_con_right {
-    max-width: 350px;
-  }
 }
 @media only screen and (max-width: 495px) {
   .contact_page_con {
     padding-top: 5rem;
-  }
-  .contact_page_con_left {
-    max-width: 350px;
   }
   .contact_page_con_left h1 {
     font-size: 20px;
@@ -169,12 +151,8 @@ textarea {
   .contact_page_con_left p {
     font-size: 14px;
   }
-  .contact_page_left_logo {
-    width: 25px;
-    height: 25px;
-  }
   .contact_page_con_right {
-    max-width: 300px;
+    width: 85%;
   }
   .form input,
   textarea {
@@ -184,13 +162,6 @@ textarea {
   }
 }
 @media only screen and (max-width: 450px) {
-  .contact_page_con_left {
-    max-width: 300px;
-  }
-
-  .contact_page_con_right {
-    max-width: 250px;
-  }
   .contact_page_con_right label {
     font-size: 15px;
   }
