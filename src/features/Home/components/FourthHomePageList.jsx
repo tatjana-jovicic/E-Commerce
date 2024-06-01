@@ -1,22 +1,23 @@
 import "../home.styles/FourthHomePage.css";
 import Button from "../../../components/Button/Button";
+import { Headphone } from "../../../assets/index";
 
 const FourthHomePageList = () => {
   const packages = [
     {
-      image: "https://pngimg.com/d/headphones_PNG7623.png",
+      image: <Headphone />,
       title: "Simple",
       description: "Security Device with Monthly Service",
       price: "$19",
     },
     {
-      image: "https://pngimg.com/d/headphones_PNG7623.png",
+      image: <Headphone />,
       title: "Standard",
       description: "Security Device with Monthly Service",
       price: "$29",
     },
     {
-      image: "https://pngimg.com/d/headphones_PNG7623.png",
+      image: <Headphone />,
       title: "Best Offer",
       description: "Security Device with Monthly Service",
       price: "$39",
@@ -27,11 +28,7 @@ const FourthHomePageList = () => {
     <div className="fourth_home_page_list_con">
       {packages.map((item) => (
         <div className="fourth_home_page_list" key={item.title}>
-          <img
-            className="fourth_home_page_con_images"
-            src={item.image}
-            alt="packet"
-          />
+          {item.image}
           <h2>{item.title}</h2>
           <p>{item.description}</p>
           <h1>{item.price}</h1>

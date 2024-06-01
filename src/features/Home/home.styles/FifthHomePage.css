@@ -1,6 +1,5 @@
 .fifth_home_page_div {
   display: flex;
-  justify-content: space-between;
   margin: 0;
   background-color: rgb(186, 178, 212);
   padding: 2rem;
@@ -30,7 +29,7 @@
 }
 .fifth_home_page_con_left_inp {
   width: 100%;
-  max-width: 500px;
+  max-width: 900px;
   padding-top: 1rem;
   margin: 1rem auto;
   display: flex;
@@ -39,11 +38,13 @@
   gap: 20px;
 }
 .fifth_home_page_con_left_inp button {
-  margin: 0;
+  width: 100%;
+  max-width: 230px;
+  font-size: 14px;
 }
 .fifth_home_page_con_left input {
   width: 100%;
-  max-width: 200px;
+  max-width: 230px;
   border-radius: 10px;
   border: 1px solid black;
   padding: 5px;
@@ -58,6 +59,7 @@
   color: black;
 }
 .fifth_home_page_con_right_title {
+  width: 100%;
   max-width: 700px;
 }
 .fifth_home_page_con_right_title h1 {
@@ -73,6 +75,7 @@
   align-items: center;
 }
 .fifth_home_page_con_right ul {
+  width: 100%;
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -80,19 +83,18 @@
   padding: 0;
 }
 .fifth_home_page_con_right li {
-  padding-left: 20px;
-  padding-right: 20px;
   font-weight: bold;
 }
 .fifth_home_page_con_right ul li:before {
   content: "\2713";
   font-size: 20px;
   margin-right: 5px;
+  margin-left: 15px;
 }
 
 @media only screen and (max-width: 1110px) {
   .fifth_home_page_con_left {
-    max-width: 800px;
+    width: 80%;
   }
   .fifth_home_page_con_left h1 {
     font-size: 30px;
@@ -108,9 +110,6 @@
   }
 }
 @media only screen and (max-width: 960px) {
-  .fifth_home_page_con_left {
-    max-width: 700px;
-  }
   .fifth_home_page_con_left h1 {
     font-size: 25px;
   }
@@ -120,64 +119,48 @@
   .fifth_home_page_con_right_title p {
     font-size: 14px;
   }
+  .fifth_home_page_con_right_list {
+    width: 100%;
+    max-width: 650px;
+  }
   .fifth_home_page_con_right ul {
-    max-width: 600px;
+    width: 70%;
     display: flex;
     flex-wrap: wrap;
   }
-  .fifth_home_page_con_right li {
-    padding-left: 6rem;
-  }
 }
-
 @media only screen and (max-width: 805px) {
-  .fifth_home_page_con_left {
-    max-width: 550px;
-  }
   .fifth_home_page_con_left_inp {
-    max-width: 500px;
-    gap: 15px;
+    gap: 10px;
   }
   .fifth_home_page_con_left input {
     max-width: 200px;
   }
   .fifth_home_page_con_left_inp button {
-    width: 100%;
     max-width: 200px;
-  }
-  .fifth_home_page_con_right_title {
-    max-width: 600px;
+    font-size: 12px;
   }
 }
-@media only screen and (max-width: 650px) {
-  .fifth_home_page_con_left {
-    max-width: 450px;
+@media only screen and (max-width: 670px) {
+  .fifth_home_page_con_left h1 {
+    font-size: 22px;
   }
-  .fifth_home_page_con_right_title {
-    max-width: 450px;
+  .fifth_home_page_con_right_list {
+    width: 100%;
+    max-width: 600px;
   }
-  .fifth_home_page_con_right li {
-    padding-left: 5rem;
+  .fifth_home_page_con_right ul li:before {
+    margin: 0;
   }
 }
 @media only screen and (max-width: 600px) {
-  .fifth_home_page_con_left {
-    max-width: 350px;
-  }
   .fifth_home_page_con_left_inp {
-    max-width: 500px;
     gap: 10px;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
   }
-  .fifth_home_page_con_left input {
-    max-width: 200px;
-  }
   .fifth_home_page_con_left_inp button {
-    max-width: 200px;
-  }
-  .fifth_home_page_con_right li {
-    padding-left: 2rem;
+    max-width: 210px;
   }
 }

@@ -1,22 +1,26 @@
 import "../home.styles/SecondHomePage.css";
+import {
+  IconEditUser,
+  IconHeapdhone,
+  IconHeapdhoneMicrophon,
+} from "../../../assets/index";
 
 const SecondHomePageList = () => {
   const headphones = [
     {
-      image:
-        "https://www.iconarchive.com/download/i91967/icons8/windows-8/Users-Edit-User.ico",
+      image: <IconEditUser />,
       title: "FREE UPDATES",
       description:
         "It users a dictionary over 200 Latin the words. combinied with a hanful of model sentence with structure.",
     },
     {
-      image: "https://pngimg.com/d/headphones_PNG7623.png",
+      image: <IconHeapdhone />,
       title: "EASY TO USE",
       description:
         "It users a dictionary over 200 Latin the words. combinied with a hanful of model sentence with structure.",
     },
     {
-      image: "https://cdn-icons-png.freepik.com/512/81/81663.png",
+      image: <IconHeapdhoneMicrophon />,
       title: "TRENDY DESIGN",
       description:
         "It users a dictionary over 200 Latin the words. combinied with a hanful of model sentence with structure.",
@@ -27,11 +31,7 @@ const SecondHomePageList = () => {
     <div className="second_home_page_list">
       {headphones.map((headphone) => (
         <div key={headphone.title}>
-          <img
-            className="second_home_page_con_icon"
-            src={headphone.image}
-            alt="icon"
-          />
+          {headphone.image}
           <h2>{headphone.title}</h2>
           <p>{headphone.description}</p>
         </div>
