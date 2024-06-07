@@ -11,3 +11,18 @@
 .cart_icon img {
   width: 100%;
 }
+
+.cart_icon span {
+  background-color: red;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: small;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -1px;
+  top: -1px;
+}

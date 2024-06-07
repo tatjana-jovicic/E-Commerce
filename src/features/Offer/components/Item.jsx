@@ -1,7 +1,20 @@
 import "./item.styles.css/Item.css";
 import Button from "../../../components/Button/Button";
+import { useOrderStore } from "../../../stores/order/order.store";
 
 const Item = ({ item }) => {
+  const { addItemToOrderCart } = useOrderStore();
+
+  const handleAddedItem = (item) => {
+    const newItem = {
+      id: item.id,
+      image: item.image,
+      name: item.name,
+      price: item.price,
+      description: item.description,
+    };
+    addItemToOrderCart(newItem);
+  };
   return (
     <div className="item">
       <div className="item_img">
@@ -12,7 +25,10 @@ const Item = ({ item }) => {
           <h3>{item.name}</h3> <p>${item.price}</p>
         </div>
         <p className="description">{item.description}</p>
-        <Button buttonText="Add to Cart" />
+        <Button
+          handleButtononClick={() => handleAddedItem(item)}
+          buttonText="Add to Cart"
+        />
       </div>
     </div>
   );
