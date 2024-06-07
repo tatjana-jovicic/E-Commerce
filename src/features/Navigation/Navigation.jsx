@@ -2,8 +2,16 @@ import { Link } from "react-router-dom";
 import "./Navigation.css";
 import PageLogo from "../../components/PageLogo/PageLogo";
 import Cart from "../../components/Cart/Cart";
+import ItemsInCart from "../Offer/components/ItemsInCart";
+import { useState } from "react";
 
 const Navigation = () => {
+  const [open, setOpen] = useState(false);
+
+  const handleOnClick = () => {
+    setOpen(!open);
+  };
+
   return (
     <nav className="nav">
       <PageLogo />
@@ -14,7 +22,8 @@ const Navigation = () => {
         <Link to={{ pathname: "/about_us" }}>About Us</Link>
         <Link to={{ pathname: "/contact" }}>Contact</Link>
       </div>
-      <Cart />
+      <Cart handleOnClick={handleOnClick} />
+      {open && <ItemsInCart />}
     </nav>
   );
 };
