@@ -1,0 +1,13 @@
+.items {
+  width: 100%;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  justify-items: center;
+  gap: 20px;
+  background-color: rgb(210, 206, 224);
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}

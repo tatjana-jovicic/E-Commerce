@@ -1,0 +1,47 @@
+.item {
+  color: black;
+  padding-top: 1rem;
+}
+.item_img {
+  background-color: rgb(243, 242, 245);
+  max-width: 250px;
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item_img img {
+  width: 70%;
+  border-radius: 10px;
+}
+.item_title {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.item_title p {
+  font-weight: bold;
+  text-align: end;
+}
+.item_description h3,
+.item_description p {
+  margin: 0;
+  padding: 0;
+}
+.description {
+  font-size: 14px;
+}
+.item_description button {
+  background-color: transparent;
+  color: black;
+  font-weight: bold;
+  border-radius: 20px;
+  border: 1px solid black;
+  cursor: pointer;
+  font-size: 13px;
+  margin-top: 10px;
+}
+.item_description button:hover {
+  background-color: rgb(243, 242, 245);
+}
