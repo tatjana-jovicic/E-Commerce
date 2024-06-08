@@ -4,7 +4,22 @@ import Bin from "../../../assets/bin.png";
 import Button from "../../../components/Button/Button";
 
 const ItemsInCart = () => {
-  const { orders } = useOrderStore();
+  const {
+    orders,
+    removeItemFromCart,
+    incrementNumberOfItems,
+    decrementNumberOfItems,
+  } = useOrderStore();
+
+  const total = orders.reduce(
+    (acc, item) => acc + item.price * item.quantity,
+    0
+  );
+
+  const itemTotalPrice = (item) => {
+    const totalItemPrice = item.price * item.quantity;
+    return totalItemPrice.toFixed(2);
+  };
 
   return (
     <div className="cart">
@@ -20,14 +35,29 @@ const ItemsInCart = () => {
               <h3>{item.name}</h3>
               <p>{item.description}</p>
             </div>
-            <div className="nesto">
+            <div className="con_right_item_in_cart">
               <div className="quantity">
-                <span className="decrement">-</span>
-                <span>1</span>
-                <span className="increment">+</span>
+                <span
+                  className="decrement"
+                  onClick={() => decrementNumberOfItems(item.id)}
+                >
+                  -
+                </span>
+                <span>{item.quantity}</span>
+                <span
+                  className="increment"
+                  onClick={() => incrementNumberOfItems(item.id)}
+                >
+                  +
+                </span>
               </div>
-              <h3 className="price">${item.price}</h3>
-              <img className="bin" src={Bin} alt="Bin Icon" />
+              <h3 className="price">${itemTotalPrice(item)}</h3>
+              <img
+                className="bin"
+                onClick={() => removeItemFromCart(item.id)}
+                src={Bin}
+                alt="Bin Icon"
+              />
             </div>
           </div>
         ))}
@@ -47,7 +77,7 @@ const ItemsInCart = () => {
         <hr />
         <div className="total">
           <h4>Total</h4>
-          <h3>$2354</h3>
+          <h3>${total.toFixed(2)}</h3>
         </div>
         <div className="buttons">
           <Button buttonText="Proceed to checkout" />

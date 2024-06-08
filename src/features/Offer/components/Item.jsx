@@ -3,7 +3,7 @@ import Button from "../../../components/Button/Button";
 import { useOrderStore } from "../../../stores/order/order.store";
 
 const Item = ({ item }) => {
-  const { addItemToOrderCart } = useOrderStore();
+  const { addItemToCart } = useOrderStore();
 
   const handleAddedItem = (item) => {
     const newItem = {
@@ -13,7 +13,7 @@ const Item = ({ item }) => {
       price: item.price,
       description: item.description,
     };
-    addItemToOrderCart(newItem);
+    addItemToCart(newItem);
   };
   return (
     <div className="item">
