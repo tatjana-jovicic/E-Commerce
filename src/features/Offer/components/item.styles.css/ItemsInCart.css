@@ -56,7 +56,7 @@
   max-width: 500px;
   padding: 15px;
   border-radius: 8px;
-  background-color: rgb(213, 201, 227);
+  background-color: rgb(228, 225, 232);
   max-height: 500px;
   overflow-y: auto;
   color: black;
@@ -72,7 +72,7 @@
   border: none;
   width: 100%;
   height: 0.5px;
-  background-color: #ffffff;
+  background-color: rgba(128, 128, 128, 0.299);
 }
 .list_items {
   display: grid;
@@ -159,4 +159,129 @@
   width: 20%;
   cursor: pointer;
   margin-left: auto;
+}
+.cart_bottom {
+  /* display: grid; */
+  /* display: flex; */
+  /* gap: 5px; */
+}
+.promocode {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  padding-top: 5px;
+}
+.promocode input {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 10px;
+  border: none;
+  padding-left: 10px;
+}
+.promocode button {
+  width: 15%;
+  max-width: 80px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  background-color: white;
+  color: black;
+}
+.promocode button:hover {
+  background-color: rgb(186, 165, 206);
+  color: white;
+  border: 1px solid white;
+}
+.cart_bottom p {
+  color: gray;
+  margin-top: 5px;
+  margin-bottom: 0;
+  text-align: start;
+  font-size: 13px;
+}
+.subototal {
+  display: flex;
+  width: 100%;
+  color: gray;
+}
+.subototal h4 {
+  display: flex;
+  width: 100%;
+  text-align: start;
+  justify-content: start;
+  align-items: center;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+.subototal h3 {
+  font-size: 15px;
+}
+.total {
+  display: flex;
+  width: 100%;
+}
+.total h4 {
+  display: flex;
+  width: 100%;
+  text-align: start;
+  justify-content: start;
+  align-items: center;
+  margin: 0;
+  font-size: 15px;
+  color: gray;
+  font-weight: 600;
+}
+.total h3 {
+  font-size: 15px;
+}
+.buttons {
+  display: grid;
+  gap: 5px;
+  padding-top: 10px;
+}
+.buttons button {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 15px;
+  background-color: white;
+  color: black;
+}
+.buttons button:hover {
+  background-color: rgb(186, 165, 206);
+  color: white;
+  border: 1px solid white;
+}
+@media only screen and (max-width: 576px) {
+  .cart {
+    width: 82%;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .con_name p {
+    display: flex;
+    text-align: start;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .cart {
+    position: absolute;
+    top: 5.5rem;
+    max-height: 470px;
+    padding: 10px;
+  }
+  .bin {
+    margin-right: 10px;
+  }
+  .promocode button {
+    font-size: 13px;
+  }
 }

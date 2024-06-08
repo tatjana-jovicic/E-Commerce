@@ -4,12 +4,18 @@ import PageLogo from "../../components/PageLogo/PageLogo";
 import Cart from "../../components/Cart/Cart";
 import ItemsInCart from "../Offer/components/ItemsInCart";
 import { useState } from "react";
+import { useOrderStore } from "../../stores/order/order.store";
 
 const Navigation = () => {
   const [open, setOpen] = useState(false);
+  const { orders } = useOrderStore();
 
   const handleOnClick = () => {
-    setOpen(!open);
+    if (orders.length > 0) {
+      setOpen(!open);
+    } else {
+      alert(`Cart is empty!`);
+    }
   };
 
   return (

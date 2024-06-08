@@ -1,6 +1,8 @@
 import { useOrderStore } from "../../../stores/order/order.store";
 import "./item.styles.css/ItemsInCart.css";
 import Bin from "../../../assets/bin.png";
+import Button from "../../../components/Button/Button";
+
 const ItemsInCart = () => {
   const { orders } = useOrderStore();
 
@@ -30,7 +32,28 @@ const ItemsInCart = () => {
           </div>
         ))}
       </div>
-      <hr />
+      <div className="cart_bottom">
+        <hr />
+        <div className="promocode">
+          <input type="text" placeholder="Promocode" />
+          <Button buttonText="Apply" />
+        </div>
+        <p>20% off discount</p>
+        <hr />
+        <div className="subototal">
+          <h4>Subtotal</h4>
+          <h3>$34554</h3>
+        </div>
+        <hr />
+        <div className="total">
+          <h4>Total</h4>
+          <h3>$2354</h3>
+        </div>
+        <div className="buttons">
+          <Button buttonText="Proceed to checkout" />
+          <Button buttonText="Continue shopping" />
+        </div>
+      </div>
     </div>
   );
 };
