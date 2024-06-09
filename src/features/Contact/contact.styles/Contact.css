@@ -77,13 +77,12 @@ textarea {
   margin-bottom: 0;
 }
 .form input[type="submit"] {
-  background-color: #845eaa;
+  background-color: rgb(164, 153, 201);
   color: white;
   cursor: pointer;
 }
 .form input[type="submit"]:hover {
   background-color: white;
-  font-weight: bold;
   color: black;
 }
 .checkbox_div {

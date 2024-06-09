@@ -18,6 +18,10 @@ const Navigation = () => {
     }
   };
 
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   return (
     <nav className="nav">
       <PageLogo />
@@ -29,7 +33,7 @@ const Navigation = () => {
         <Link to={{ pathname: "/contact" }}>Contact</Link>
       </div>
       <Cart handleOnClick={handleOnClick} />
-      {open && <ItemsInCart />}
+      {open && <ItemsInCart onClose={handleClose} />}
     </nav>
   );
 };
