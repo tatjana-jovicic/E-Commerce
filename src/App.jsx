@@ -6,6 +6,7 @@ import Offer from "./features/Offer/Offer";
 import HowToOrder from "./features/HowToOrder/HowToOrder";
 import AboutUs from "./features/AboutUs/AboutUs";
 import Contact from "./features/Contact/Contact";
+import Checkout from "./features/Offer/components/Checkout";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/how_order" element={<HowToOrder />} />
           <Route path="/about_us" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/checkout" element={<Checkout />} />
         </Routes>
       </BrowserRouter>
     </>

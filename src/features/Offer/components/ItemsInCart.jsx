@@ -2,14 +2,21 @@ import { useOrderStore } from "../../../stores/order/order.store";
 import "./item.styles.css/ItemsInCart.css";
 import Bin from "../../../assets/bin.png";
 import Button from "../../../components/Button/Button";
+import CloseIcon from "../../../assets/closeIcon.webp";
+import { useNavigate } from "react-router-dom";
 
-const ItemsInCart = () => {
+const ItemsInCart = ({ onClose }) => {
+  const router = useNavigate();
   const {
     orders,
     removeItemFromCart,
     incrementNumberOfItems,
     decrementNumberOfItems,
   } = useOrderStore();
+
+  const handleClickCheckout = () => {
+    router("/checkout");
+  };
 
   const total = orders.reduce(
     (acc, item) => acc + item.price * item.quantity,
@@ -24,6 +31,12 @@ const ItemsInCart = () => {
   return (
     <div className="cart">
       <h3>Cart</h3>
+      <img
+        className="close_icon"
+        onClick={onClose}
+        src={CloseIcon}
+        alt="close icon"
+      />
       <hr />
       <div className="list_items">
         {orders.map((item) => (
@@ -80,7 +93,10 @@ const ItemsInCart = () => {
           <h3>${total.toFixed(2)}</h3>
         </div>
         <div className="buttons">
-          <Button buttonText="Proceed to checkout" />
+          <Button
+            handleButtononClick={() => handleClickCheckout()}
+            buttonText="Proceed to checkout"
+          />
           <Button buttonText="Continue shopping" />
         </div>
       </div>
