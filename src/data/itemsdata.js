@@ -90,7 +90,7 @@ export const items = [
     price: 432,
     image: headphones9,
     description: "Simple design, high quality sound.",
-    rating: 2.2,
+    rating: 2.5,
   },
   {
     id: 10,
@@ -130,7 +130,7 @@ export const items = [
     price: 432,
     image: headphones14,
     description: "Simple design, high quality sound.",
-    rating: 4.7,
+    rating: 4.5,
   },
   {
     id: 15,
