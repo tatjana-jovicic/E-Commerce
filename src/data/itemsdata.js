@@ -26,6 +26,7 @@ export const items = [
     price: 122,
     image: headphones1,
     description: "Simple design, high quality sound.",
+    rating: 3,
   },
   {
     id: 2,
@@ -33,6 +34,7 @@ export const items = [
     price: 432,
     image: headphones2,
     description: "Simple design, high quality sound.",
+    rating: 4,
   },
   {
     id: 3,
@@ -40,6 +42,7 @@ export const items = [
     price: 544,
     image: headphones3,
     description: "Simple design, high quality sound.",
+    rating: 3.5,
   },
   {
     id: 4,
@@ -47,6 +50,7 @@ export const items = [
     price: 432,
     image: headphones4,
     description: "Simple design, high quality sound.",
+    rating: 2,
   },
   {
     id: 5,
@@ -54,6 +58,7 @@ export const items = [
     price: 432,
     image: headphones5,
     description: "Simple design, high quality sound.",
+    rating: 1,
   },
   {
     id: 6,
@@ -61,6 +66,7 @@ export const items = [
     price: 432,
     image: headphones6,
     description: "Simple design, high quality sound.",
+    rating: 5,
   },
   {
     id: 7,
@@ -68,6 +74,7 @@ export const items = [
     price: 432,
     image: headphones7,
     description: "Simple design, high quality sound.",
+    rating: 4,
   },
   {
     id: 8,
@@ -75,6 +82,7 @@ export const items = [
     price: 432,
     image: headphones8,
     description: "Simple design, high quality sound.",
+    rating: 4.5,
   },
   {
     id: 9,
@@ -82,6 +90,7 @@ export const items = [
     price: 432,
     image: headphones9,
     description: "Simple design, high quality sound.",
+    rating: 2.2,
   },
   {
     id: 10,
@@ -89,6 +98,7 @@ export const items = [
     price: 432,
     image: headphones10,
     description: "Simple design, high quality sound.",
+    rating: 3,
   },
   {
     id: 11,
@@ -96,6 +106,7 @@ export const items = [
     price: 432,
     image: headphones11,
     description: "Simple design, high quality sound.",
+    rating: 4,
   },
   {
     id: 12,
@@ -103,6 +114,7 @@ export const items = [
     price: 432,
     image: headphones12,
     description: "Simple design, high quality sound.",
+    rating: 3,
   },
   {
     id: 13,
@@ -110,6 +122,7 @@ export const items = [
     price: 432,
     image: headphones13,
     description: "Simple design, high quality sound.",
+    rating: 5,
   },
   {
     id: 14,
@@ -117,6 +130,7 @@ export const items = [
     price: 432,
     image: headphones14,
     description: "Simple design, high quality sound.",
+    rating: 4.7,
   },
   {
     id: 15,
@@ -124,6 +138,7 @@ export const items = [
     price: 432,
     image: headphones15,
     description: "Simple design, high quality sound.",
+    rating: 3,
   },
   {
     id: 16,
@@ -131,6 +146,7 @@ export const items = [
     price: 432,
     image: headphones16,
     description: "Simple design, high quality sound.",
+    rating: 2,
   },
   {
     id: 17,
@@ -138,6 +154,7 @@ export const items = [
     price: 432,
     image: headphones17,
     description: "Simple design, high quality sound.",
+    rating: 1,
   },
   {
     id: 18,
@@ -145,6 +162,7 @@ export const items = [
     price: 432,
     image: headphones18,
     description: "Simple design, high quality sound.",
+    rating: 5,
   },
   {
     id: 19,
@@ -152,6 +170,7 @@ export const items = [
     price: 432,
     image: headphones19,
     description: "Simple design, high quality sound.",
+    rating: 3,
   },
   {
     id: 20,
@@ -159,6 +178,7 @@ export const items = [
     price: 432,
     image: headphones20,
     description: "Simple design, high quality sound.",
+    rating: 4.5,
   },
 ];
 
