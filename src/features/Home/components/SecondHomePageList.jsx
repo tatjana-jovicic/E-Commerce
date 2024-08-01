@@ -11,19 +11,19 @@ const SecondHomePageList = () => {
       image: <IconEditUser />,
       title: "FREE UPDATES",
       description:
-        "It users a dictionary over 200 Latin the words. combinied with a hanful of model sentence with structure.",
+        "Stay ahead with the latest features and enhancements. Our headphones come with free firmware updates to ensure you always have the best performance and new functionalities.",
     },
     {
       image: <IconHeapdhone />,
       title: "EASY TO USE",
       description:
-        "It users a dictionary over 200 Latin the words. combinied with a hanful of model sentence with structure.",
+        "Designed with user convenience in mind. Our intuitive controls and quick setup make using your headphones easy, so you can enjoy the sound without any hassle.",
     },
     {
       image: <IconHeapdhoneMicrophon />,
       title: "TRENDY DESIGN",
       description:
-        "It users a dictionary over 200 Latin the words. combinied with a hanful of model sentence with structure.",
+        "Stylishly crafted to match your modern lifestyle. Our headphones boast a sleek, contemporary design that complements any outfit and stands out with its bold aesthetic.",
     },
   ];
 

@@ -74,29 +74,35 @@ button:focus-visible {
   margin: auto;
   filter: grayscale(1);
 }
+
 .first_home_page_footer_logo:hover {
   filter: grayscale(0);
 }
+
 .first_home_page_right_img {
   width: 100%;
   max-width: 500px;
 }
+
 @media only screen and (max-width: 1100px) {
   .first_home_page_right_img {
     width: 85%;
   }
 }
+
 @media only screen and (max-width: 800px) {
   .first_home_page_right_img {
     width: 100%;
     max-width: 300px;
   }
 }
+
 @media only screen and (max-width: 700px) {
   .first_home_page_footer_logo {
     max-width: 70px;
   }
 }
+
 @media only screen and (max-width: 600px) {
   .first_home_page_footer_logo {
     max-width: 80px;
@@ -109,6 +115,7 @@ button:focus-visible {
   max-width: 50px;
   filter: invert(1);
 }
+
 @media only screen and (max-width: 500px) {
   .second_home_page_con_icon {
     max-width: 40px;
@@ -139,11 +146,13 @@ button:focus-visible {
   max-width: 100px;
   border-radius: 50%;
 }
+
 @media only screen and (max-width: 850px) {
   .sixth_home_page_con_icon {
     max-width: 80px;
   }
 }
+
 @media only screen and (max-width: 715px) {
   .sixth_home_page_con_icon {
     max-width: 100px;
@@ -155,39 +164,49 @@ button:focus-visible {
   max-width: 300px;
   border-radius: 5px;
 }
+
 .about_page_pic_con_2 {
   width: 100%;
   max-width: 350px;
   border-radius: 5px;
+  padding: 2rem;
 }
+
 .about_page_pic_con_3 {
   width: 100%;
   max-width: 300px;
   border-radius: 5px;
 }
+
 @media only screen and (max-width: 820px) {
   .about_page_pic_con_1 {
     max-width: 200px;
   }
+
   .about_page_pic_con_2 {
     max-width: 250px;
   }
 }
+
 @media only screen and (max-width: 720px) {
   .about_page_pic_con_1 {
     max-width: 300px;
   }
+
   .about_page_pic_con_2 {
     max-width: 300px;
   }
 }
+
 @media only screen and (max-width: 530px) {
   .about_page_pic_con_1 {
     max-width: 250px;
   }
+
   .about_page_pic_con_2 {
     max-width: 250px;
   }
+
   .about_page_pic_con_3 {
     max-width: 200px;
   }
@@ -198,12 +217,14 @@ button:focus-visible {
   width: 35px;
   height: 35px;
 }
+
 @media only screen and (max-width: 850px) {
   .contact_page_left_logo {
     width: 30px;
     height: 30px;
   }
 }
+
 @media only screen and (max-width: 495px) {
   .contact_page_left_logo {
     width: 25px;

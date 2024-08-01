@@ -28,7 +28,6 @@ const Navigation = () => {
       <div className="nav_links">
         <Link to={{ pathname: "/" }}>Home</Link>
         <Link to={{ pathname: "/offer" }}>Offer</Link>
-        <Link to={{ pathname: "/how_order" }}>How to order?</Link>
         <Link to={{ pathname: "/about_us" }}>About Us</Link>
         <Link to={{ pathname: "/contact" }}>Contact</Link>
       </div>

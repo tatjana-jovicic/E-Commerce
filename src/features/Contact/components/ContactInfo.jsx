@@ -1,4 +1,4 @@
-import "../contact.styles/Contact.css";
+import "../Contact.css";
 import { Location, Phone } from "../../../assets/index";
 
 const ContactInfo = () => {
