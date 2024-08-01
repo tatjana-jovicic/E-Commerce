@@ -1,67 +1,69 @@
 .second_home_page_con {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  flex-direction: column;
-  padding-top: 6.7rem;
-  padding-bottom: 6.7rem;
+  color: black;
+  gap: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
   background-color: rgb(210, 206, 224);
 }
+
 .second_home_page_con_left {
   width: 100%;
   max-width: 800px;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  display: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: black;
+  margin: 1rem;
 }
+
 .second_home_page_con_left h1 {
   font-size: 35px;
 }
+
 .second_home_page_con_right {
   width: 100%;
   max-width: 900px;
-  padding-top: 5%;
-  color: black;
   font-size: 13px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
+
 .second_home_page_con_right p {
   font-size: 15px;
 }
+
 .second_home_page_list {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 20px;
+  gap: 2rem;
 }
+
 .second_home_page_list h2 {
   text-transform: uppercase;
 }
+
 @media only screen and (max-width: 900px) {
-  .second_home_page_list {
-    width: 100%;
-    max-width: 400px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-wrap: wrap;
+  .second_home_page_con {
+    gap: 2rem;
   }
-}
-@media only screen and (max-width: 830px) {
+
   .second_home_page_con_left {
     width: 90%;
   }
+
   .second_home_page_con_left h1 {
     font-size: 30px;
+  }
+
+  .second_home_page_list {
+    width: 60%;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -69,30 +71,21 @@
   .second_home_page_con_left h1 {
     font-size: 25px;
   }
+
   .second_home_page_con_right p {
     font-size: 14px;
   }
-}
-@media only screen and (max-width: 500px) {
+
   .second_home_page_con {
-    padding-top: 4rem;
+    padding-top: 2rem;
     padding-bottom: 4rem;
   }
+
   .second_home_page_list {
     width: 80%;
   }
+
   .second_home_page_list h2 {
     font-size: 17px;
-  }
-}
-@media only screen and (max-width: 430px) {
-  .second_home_page_con_left h1 {
-    font-size: 22px;
-  }
-  .second_home_page_con_left p {
-    font-size: 14px;
-  }
-  .second_home_page_list h2 {
-    font-size: 15px;
   }
 }

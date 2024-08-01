@@ -16,6 +16,7 @@ const ItemsInCart = ({ onClose }) => {
 
   const handleClickCheckout = () => {
     router("/checkout");
+    onClose();
   };
 
   const total = orders.reduce(
@@ -85,7 +86,7 @@ const ItemsInCart = ({ onClose }) => {
         <hr />
         <div className="subototal">
           <h4>Subtotal</h4>
-          <h3>$34554</h3>
+          <h3>$0</h3>
         </div>
         <hr />
         <div className="total">
@@ -94,7 +95,7 @@ const ItemsInCart = ({ onClose }) => {
         </div>
         <div className="buttons">
           <Button
-            handleButtononClick={() => handleClickCheckout()}
+            handleButtononClick={handleClickCheckout}
             buttonText="Proceed to checkout"
           />
           <Button buttonText="Continue shopping" />

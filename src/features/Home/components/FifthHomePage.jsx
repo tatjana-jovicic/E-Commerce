@@ -15,22 +15,22 @@ const FifthHomePage = () => {
           </div>
           <div className="fifth_home_page_con_right">
             <div className="fifth_home_page_con_right_title">
-              <h1>Feature your best sellers.</h1>
+              <h1>Discover Your Ideal Sound Companion</h1>
               <p>
-                There are many vaariations of passages of Lorem ipsum avalible
-                but the majority have suffered you are going to use passage of
-                Lorem ipsu you need to be sure there isnt anything embarrassing
-                hidden in the middle of text. All the Lorem ipsum generators.
+                Our headphones deliver exceptional audio quality, whether you're
+                a casual listener or an audiophile. Explore our top features to
+                find the perfect match for your needs. From superior sound
+                clarity to comfortable design, we have something for everyone.
               </p>
             </div>
             <div className="fifth_home_page_con_right_list">
               <ul>
-                <li>It uses a didtionary of over Latin words as necessary</li>
-                <li>Combined with handful of model sentence structure lorem</li>
-                <li>Lorem Ipsum which looks reasonable a handful</li>
-                <li>It uses a directionary of over Latin words as necessary</li>
-                <li>Combined with handful of model sentence structure lorem</li>
-                <li>Lorem Ipsum which looks reasonable a handful</li>
+                <li>Crystal-clear audio for an immersive experience</li>
+                <li>Comfortable fit for extended listening sessions</li>
+                <li>Advanced noise-cancellation technology</li>
+                <li>Durable build quality for long-lasting use</li>
+                <li>Stylish design that complements your lifestyle</li>
+                <li>Easy Bluetooth connectivity for seamless use</li>
               </ul>
             </div>
           </div>

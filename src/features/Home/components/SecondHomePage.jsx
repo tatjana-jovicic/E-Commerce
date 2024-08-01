@@ -6,11 +6,11 @@ const SecondHomePage = () => {
     <div className="second_home_page_div">
       <div className="second_home_page_con">
         <div className="second_home_page_con_left">
-          <h1>Beautiful presentations made easy.</h1>
+          <h1>Elevate Your Listening Experience Effortlessly.</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor uncididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercition.
+            Discover how simple it is to enhance your audio journey. Our
+            headphones are designed to deliver superior sound quality with ease,
+            so you can enjoy every note and beat effortlessly.
           </p>
         </div>
         <div className="second_home_page_con_right">

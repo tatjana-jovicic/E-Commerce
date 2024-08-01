@@ -1,96 +1,90 @@
-.third_home_page_div {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  margin: 0;
-}
 .third_home_page_div_con {
   display: flex;
   width: 100%;
   color: rgb(86, 45, 152);
 }
-.third_home_page_con_left {
-  background-color: white;
+
+.third_home_page_con_left,
+.third_home_page_con_right {
   width: 100%;
-  max-width: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.third_home_page_con_left {
+  background-color: white;
+}
+
 .third_con_title {
-  display: column;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   justify-content: center;
   text-align: start;
-  align-items: center;
   padding: 3rem;
 }
+
 .third_con_title h1 {
-  font-size: 40px;
+  font-size: 38px;
+  margin: 0;
+  text-transform: uppercase;
 }
-.third_home_page_con_left p {
-  padding-bottom: 0.5rem;
+
+.third_con_title p {
+  padding-bottom: 1rem;
   font-size: 17px;
 }
+
 .third_home_page_con_left button {
-  width: 100%;
   max-width: 130px;
   font-size: 15px;
 }
+
 .third_home_page_con_right {
   background-color: rgb(186, 178, 212);
-  width: 100%;
-  max-width: 1000px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
+  padding: 1rem 0;
 }
+
 @media only screen and (max-width: 1200px) {
   .third_con_title h1 {
     font-size: 35px;
   }
 }
+
 @media only screen and (max-width: 1000px) {
   .third_con_title h1 {
     font-size: 30px;
   }
-  .third_home_page_con_left p {
+
+  .third_con_title p {
     font-size: 15px;
   }
+
   .third_home_page_con_left button {
-    max-width: 115px;
     font-size: 13px;
   }
 }
+
 @media only screen and (max-width: 850px) {
   .third_con_title h1 {
     font-size: 25px;
   }
-  .third_home_page_con_left p {
+
+  .third_con_title p {
     font-size: 14px;
   }
-  .third_home_page_con_left button {
-    max-width: 110px;
-    font-size: 12px;
-  }
 }
+
 @media only screen and (max-width: 700px) {
   .third_home_page_div_con {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: start;
     flex-direction: column;
+    text-align: center;
   }
 }
+
 @media only screen and (max-width: 500px) {
   .third_con_title h1 {
     font-size: 20px;
-  }
-  .third_home_page_con_left p {
-    font-size: 14px;
   }
 }

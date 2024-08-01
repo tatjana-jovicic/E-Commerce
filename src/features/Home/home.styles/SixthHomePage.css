@@ -1,5 +1,4 @@
 .sixth_home_page_con {
-  width: 100%;
   background-color: rgb(210, 206, 224);
   display: flex;
   justify-content: center;
@@ -7,12 +6,14 @@
   text-align: center;
   flex-direction: column;
 }
+
 .sixt_home_page_con_left {
   padding-top: 4rem;
   width: 100%;
   color: black;
-  font-size: 9px;
+  font-size: 10px;
 }
+
 .sixt_home_page_con_right {
   width: 100%;
   color: black;
@@ -22,60 +23,73 @@
   text-align: center;
   padding-bottom: 4rem;
 }
+
 .sixth_home_page_list {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 40px;
-  padding: 1rem;
+  gap: 3rem;
+  padding: 2rem;
 }
 
 .sixth_home_page_list p {
   width: 100%;
-  max-width: 300px;
 }
+
 .sixth_home_page_list h2 {
   font-size: 20px;
   color: rgb(89, 67, 168);
 }
 
 @media only screen and (max-width: 990px) {
+  .sixt_home_page_con_left {
+    padding-top: 2rem;
+  }
+
   .sixt_home_page_con_right {
-    width: 90%;
+    width: 100%;
+    padding-bottom: 0;
   }
 }
+
 @media only screen and (max-width: 850px) {
   .sixth_home_page_list p {
     font-size: 15px;
   }
+
   .sixth_home_page_list h2 {
     font-size: 18px;
   }
 }
+
 @media only screen and (max-width: 715px) {
   .sixt_home_page_con_left {
     font-size: 8px;
   }
+
   .sixth_home_page_list {
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
   }
+
   .sixth_home_page_list p {
     font-size: 16px;
   }
+
   .sixth_home_page_list h2 {
     font-size: 20px;
   }
 }
+
 @media only screen and (max-width: 500px) {
   .sixth_home_page_list p {
     font-size: 15px;
   }
+
   .sixth_home_page_list h2 {
     font-size: 18px;
   }
+
   .sixt_home_page_con_left h1 {
     font-size: 25px;
   }

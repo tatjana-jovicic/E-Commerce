@@ -1,4 +1,4 @@
-import "./contact.styles/Contact.css";
+import "./Contact.css";
 import ContactInfo from "./components/ContactInfo";
 
 const Contact = () => {

@@ -4,18 +4,22 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 3.7rem;
+  padding: 2.3rem;
   background-color: rgb(159, 150, 191);
 }
+
 .div {
   background-color: rgb(186, 178, 212);
   max-width: 800px;
+  padding-bottom: 4rem;
 }
+
 .seventh_home_page_con footer {
   font-size: small;
   padding-top: 30px;
   color: rgba(88, 88, 88, 0.975);
 }
+
 @media only screen and (max-width: 700px) {
   .seventh_home_page_con {
     padding: 4rem;

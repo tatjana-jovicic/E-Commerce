@@ -7,19 +7,19 @@ const FourthHomePageList = () => {
     {
       image: <Headphone />,
       title: "Simple",
-      description: "Security Device with Monthly Service",
+      description: "High-Quality Headphones with Premium Features",
       price: "$19",
     },
     {
       image: <Headphone />,
       title: "Standard",
-      description: "Security Device with Monthly Service",
+      description: "Enhanced Audio Experience with Monthly Support",
       price: "$29",
     },
     {
       image: <Headphone />,
       title: "Best Offer",
-      description: "Security Device with Monthly Service",
+      description: "Top-Rated Headphones with Exclusive Benefits",
       price: "$39",
     },
   ];

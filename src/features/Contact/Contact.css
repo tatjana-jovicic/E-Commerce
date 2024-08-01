@@ -1,10 +1,10 @@
 .contact_page_div {
   background-color: rgb(210, 206, 224);
   color: black;
-  min-height: 100vh;
   padding-left: 3rem;
   padding-right: 3rem;
 }
+
 .contact_page_con {
   width: 100%;
   display: flex;
@@ -14,40 +14,48 @@
   padding-top: 9rem;
   padding-bottom: 3rem;
 }
+
 .contact_page_con_left {
   width: 100%;
   max-width: 400px;
 }
+
 .contact_page_con_left h1 {
   font-size: 30px;
 }
+
 .contact_page_con_left hr {
   border: none;
   height: 1px;
   background-color: white;
 }
+
 .contact_page_left_list_con {
   display: grid;
   align-items: center;
   gap: 30px;
   padding-top: 1rem;
 }
+
 .contact_page_left_list {
   width: 100%;
   display: flex;
   flex-direction: row;
   gap: 30px;
 }
+
 .contact_page_left_list_text h3 {
   margin: 0;
   font-size: 17px;
   padding-bottom: 10px;
 }
+
 .contact_page_left_list_text p {
   margin: 0;
   font-style: italic;
   font-size: 14px;
 }
+
 .contact_page_con_right {
   width: 100%;
   max-width: 400px;
@@ -55,12 +63,15 @@
   padding: 2rem;
   border-radius: 10px;
 }
+
 .contact_page_con_right h2 {
   font-size: 20px;
 }
+
 .form {
   display: grid;
 }
+
 .form input,
 textarea {
   width: 100%;
@@ -72,19 +83,23 @@ textarea {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   resize: vertical;
 }
+
 .form textarea {
   padding-bottom: 50px;
   margin-bottom: 0;
 }
+
 .form input[type="submit"] {
   background-color: rgb(164, 153, 201);
   color: white;
   cursor: pointer;
 }
+
 .form input[type="submit"]:hover {
   background-color: white;
   color: black;
 }
+
 .checkbox_div {
   width: 100%;
   display: flex;
@@ -93,66 +108,87 @@ textarea {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
 .checkbox_div input {
   cursor: pointer;
   width: 15px;
   height: 15px;
   margin: 5px 0;
 }
+
 .checkbox_div label {
   margin: 0;
   font-size: 14px;
 }
+
 .checkbox_div a {
   color: #515faf;
 }
+
+.contact_page_con_right input[type="submit"] {
+  width: auto;
+}
+
 @media only screen and (max-width: 1060px) {
   .contact_page_con_left {
     width: 90%;
   }
+
   .contact_page_con_right {
     width: 90%;
   }
 }
+
 @media only screen and (max-width: 850px) {
   .contact_page_con_left h1 {
     font-size: 25px;
   }
+
   .contact_page_con_left p {
     font-size: 15px;
   }
+
   .contact_page_left_list_text h3 {
     font-size: 15px;
   }
+
   .contact_page_left_list_text p {
     font-size: 13px;
   }
+
   .contact_page_con_right {
     padding: 1.5rem;
   }
+
   .contact_page_con_right h2 {
     font-size: 18px;
   }
 }
+
 @media only screen and (max-width: 770px) {
   .contact_page_con {
     display: grid;
     padding-top: 6rem;
   }
 }
+
 @media only screen and (max-width: 495px) {
   .contact_page_con {
     padding-top: 5rem;
   }
+
   .contact_page_con_left h1 {
     font-size: 20px;
   }
+
   .contact_page_con_left p {
     font-size: 14px;
   }
+
   .contact_page_con_right {
     width: 85%;
   }
+
   .form input,
   textarea {
     padding: 10px;
@@ -160,10 +196,12 @@ textarea {
     font-size: 12px;
   }
 }
+
 @media only screen and (max-width: 450px) {
   .contact_page_con_right label {
     font-size: 15px;
   }
+
   .checkbox_div label {
     font-size: 14px;
   }

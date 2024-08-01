@@ -8,8 +8,7 @@ const SeventhHomePage = () => {
         <MainHomePage />
       </div>
       <footer>
-        Copyright &copy; domainname.com. All Rights Reserved | Designed by:
-        buylandingpagedesign.com
+        Copyright &copy; All Rights Reserved | Designed by: Tatjana Jovicic
       </footer>
     </div>
   );
