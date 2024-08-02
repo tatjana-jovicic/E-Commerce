@@ -1,6 +1,6 @@
 import "./item.styles.css/Checkout.css";
 import Button from "../../../components/Button/Button";
-import Padlock from "../../../assets/padlock.png";
+import { Padlock } from "../../../assets/index";
 
 const Checkout = () => {
   return (
@@ -42,7 +42,7 @@ const Checkout = () => {
               <input type="text" placeholder="Phone for Delivery Contact" />
             </div>
             <div className="checkout_con_right_key">
-              <img src={Padlock} alt="icon key" />
+              <Padlock />
               <p>
                 Your privacy is important to us. View our privacy policu here.
                 We'll only contact you if there's an issue with your order.

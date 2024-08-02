@@ -13,15 +13,6 @@
   border: 1px solid rgb(0, 0, 0);
 }
 
-.close_icon {
-  width: 20px;
-  position: absolute;
-  top: 10%;
-  right: 1%;
-  transform: translateY(-150%);
-  cursor: pointer;
-}
-
 .cart h3 {
   margin: 5px;
 }
@@ -94,11 +85,6 @@
   padding: 2px;
 }
 
-.increment,
-.decrement {
-  cursor: pointer;
-}
-
 .price {
   width: 70px;
   font-size: 15px;
@@ -113,11 +99,6 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-}
-
-.bin {
-  max-width: 20px;
-  cursor: pointer;
 }
 
 .promocode {
@@ -220,10 +201,6 @@
     top: 5.5rem;
     max-height: 470px;
     padding: 10px;
-  }
-
-  .bin {
-    margin-right: 10px;
   }
 
   .promocode button {

@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import Page_Logo from "../../assets/page-logo.png";
+import { PageLogoImg } from "../../assets/index";
 import "./PageLogo.css";
 
 const PageLogo = () => {
@@ -16,7 +16,7 @@ const PageLogo = () => {
         handleOnClick();
       }}
     >
-      <img src={Page_Logo} alt="page logo" />
+      <PageLogoImg />
     </div>
   );
 };
