@@ -6,11 +6,16 @@ import Offer from "./features/Offer/Offer";
 import AboutUs from "./features/AboutUs/AboutUs";
 import Contact from "./features/Contact/Contact";
 import Checkout from "./features/Offer/components/Checkout";
+import Notification from "./components/Notification/Notification";
+import useNotificationStore from "./stores/notification/notification.store";
 
 const App = () => {
+  const isOpen = useNotificationStore((state) => state.isOpen);
+
   return (
     <>
       <BrowserRouter>
+        {isOpen && <Notification />}
         <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />

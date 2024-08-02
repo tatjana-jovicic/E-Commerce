@@ -1,9 +1,9 @@
 import { useOrderStore } from "../../../stores/order/order.store";
 import "./item.styles.css/ItemsInCart.css";
-import Bin from "../../../assets/bin.png";
+import { Increment, Decrement, CloseIcon, Bin } from "../../../assets/index";
 import Button from "../../../components/Button/Button";
-import CloseIcon from "../../../assets/closeIcon.webp";
 import { useNavigate } from "react-router-dom";
+import useNotificationStore from "../../../stores/notification/notification.store";
 
 const ItemsInCart = ({ onClose }) => {
   const router = useNavigate();
@@ -13,10 +13,16 @@ const ItemsInCart = ({ onClose }) => {
     incrementNumberOfItems,
     decrementNumberOfItems,
   } = useOrderStore();
+  const { setNotification } = useNotificationStore();
 
   const handleClickCheckout = () => {
     router("/checkout");
     onClose();
+  };
+
+  const RemoveItemFromCart = (id) => {
+    removeItemFromCart(id);
+    setNotification(true, "Item deleted!", "success");
   };
 
   const total = orders.reduce(
@@ -32,12 +38,7 @@ const ItemsInCart = ({ onClose }) => {
   return (
     <div className="cart">
       <h3>Cart</h3>
-      <img
-        className="close_icon"
-        onClick={onClose}
-        src={CloseIcon}
-        alt="close icon"
-      />
+      <CloseIcon handleToClick={onClose} />
       <hr />
       <div className="list_items">
         {orders.map((item) => (
@@ -51,27 +52,16 @@ const ItemsInCart = ({ onClose }) => {
             </div>
             <div className="con_right_item_in_cart">
               <div className="quantity">
-                <span
-                  className="decrement"
-                  onClick={() => decrementNumberOfItems(item.id)}
-                >
-                  -
-                </span>
+                <Decrement
+                  handleToClick={() => decrementNumberOfItems(item.id)}
+                />
                 <span>{item.quantity}</span>
-                <span
-                  className="increment"
-                  onClick={() => incrementNumberOfItems(item.id)}
-                >
-                  +
-                </span>
+                <Increment
+                  handleToClick={() => incrementNumberOfItems(item.id)}
+                />
               </div>
               <h3 className="price">${itemTotalPrice(item)}</h3>
-              <img
-                className="bin"
-                onClick={() => removeItemFromCart(item.id)}
-                src={Bin}
-                alt="Bin Icon"
-              />
+              <Bin handleToClick={() => RemoveItemFromCart(item.id)} />
             </div>
           </div>
         ))}

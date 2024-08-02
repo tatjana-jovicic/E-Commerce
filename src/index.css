@@ -67,6 +67,10 @@ button:focus-visible {
   }
 } */
 
+/* ------------------------------------PAGE Logo--------------------- */
+.page_logo_img {
+  width: 100%;
+}
 /* ------------------------------------HOME PAGE------FirstPage--------------- */
 .first_home_page_footer_logo {
   width: 100%;
@@ -158,6 +162,40 @@ button:focus-visible {
     max-width: 100px;
   }
 }
+
+/* -------------------------------------------OFFER PAGE--------------- */
+.close_icon {
+  width: 20px;
+  position: absolute;
+  top: 10%;
+  right: 2%;
+  transform: translateY(-150%);
+  cursor: pointer;
+}
+
+.increment,
+.decrement {
+  cursor: pointer;
+  width: 12%;
+}
+
+.bin {
+  max-width: 20px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 400px) {
+  .bin {
+    margin-right: 10px;
+  }
+}
+
+.checkout_con_right_key_img {
+  width: 10%;
+  max-width: 20px;
+  height: 20px;
+  margin-top: 5px;
+}
+
 /* -------------------------------------------ABOUT PAGE--------------- */
 .about_page_pic_con_1 {
   width: 100%;

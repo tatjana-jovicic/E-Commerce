@@ -1,3 +1,4 @@
+import pageLogo from "./page-logo.png";
 import JblImg from "./jbl-logo.png";
 import CompanyNameImg from "./companyName-logo.png";
 import CRImg from "./cr-logo.png";
@@ -16,8 +17,18 @@ import headphone from "./headphone.png";
 import client1 from "./client_1.webp";
 import client2 from "./client_2.webp";
 import client3 from "./client_3.jpg";
+import closeIcon from "./closeIcon.webp";
+import increment from "./increment.png";
+import decrement from "./decrement.jpg";
+import bin from "./bin.png";
+import padlock from "./padlock.png";
 import location from "./location.png";
 import phone from "./phone.png";
+
+// ---------------------------------------------------------PageLogo
+const PageLogoImg = () => {
+  return <img className="page_logo_img" src={pageLogo} alt="page logo" />;
+};
 
 // ---------------------------------------------------------HomePage
 const HeadphonesBlack = () => {
@@ -158,6 +169,52 @@ const Client3 = () => {
   );
 };
 
+// ---------------------------------------------------------OfferPage
+const Increment = ({ handleToClick }) => {
+  return (
+    <img
+      className="increment"
+      onClick={handleToClick}
+      src={increment}
+      alt="increment logo"
+    />
+  );
+};
+
+const Decrement = ({ handleToClick }) => {
+  return (
+    <img
+      className="decrement"
+      onClick={handleToClick}
+      src={decrement}
+      alt="decrement logo"
+    />
+  );
+};
+
+const Bin = ({ handleToClick }) => {
+  return (
+    <img className="bin" onClick={handleToClick} src={bin} alt="bin icon" />
+  );
+};
+
+const CloseIcon = ({ handleToClick }) => {
+  return (
+    <img
+      className="close_icon"
+      onClick={handleToClick}
+      src={closeIcon}
+      alt="close icon"
+    />
+  );
+};
+
+const Padlock = () => {
+  return (
+    <img className="checkout_con_right_key_img" src={padlock} alt="key icon" />
+  );
+};
+
 // ---------------------------------------------------------AboutPage
 const AboutPicture_1 = () => {
   return (
@@ -207,6 +264,7 @@ const Phone = () => {
 };
 
 export {
+  PageLogoImg,
   Jbl,
   CompanyName,
   CR,
@@ -225,6 +283,11 @@ export {
   Client2,
   Client3,
   Headphone,
+  Increment,
+  Decrement,
+  CloseIcon,
+  Bin,
+  Padlock,
   Location,
   Phone,
 };

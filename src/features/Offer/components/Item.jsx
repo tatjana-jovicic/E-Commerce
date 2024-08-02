@@ -2,9 +2,11 @@ import "./item.styles.css/Item.css";
 import Button from "../../../components/Button/Button";
 import { useOrderStore } from "../../../stores/order/order.store";
 import TextRating from "./TextRating";
+import useNotificationStore from "../../../stores/notification/notification.store";
 
 const Item = ({ item }) => {
   const { addItemToCart } = useOrderStore();
+  const { setNotification } = useNotificationStore();
 
   const handleAddedItem = (item) => {
     const newItem = {
@@ -15,6 +17,7 @@ const Item = ({ item }) => {
       description: item.description,
     };
     addItemToCart(newItem);
+    setNotification(true, "Item added!", "success");
   };
 
   return (
